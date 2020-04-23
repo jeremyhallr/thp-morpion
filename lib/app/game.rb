@@ -15,7 +15,6 @@ class Game
   def turn
     Show.new.show_board(@board)
     @board.play_turn(@current_player)
-    puts "\n Le tour est terminé"
     if @board.count_turn == 10 ||@board.win?
       game_end
     end
@@ -37,9 +36,9 @@ class Game
   # Detect if there is a winner or if it is a draw and display the end of the game
   def game_end
     if @board.win?
-      print "\nBravo ! #{@current_player.name} a gagné ! "
+      puts "\nBravo ! #{@current_player.name} a gagné ! "
     else
-      print "\nC'est une égalité !"
+      puts "\nC'est une égalité !"
     end
     @status = "game end"
 
