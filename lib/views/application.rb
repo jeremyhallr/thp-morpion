@@ -22,7 +22,7 @@ class Application
     puts "\nJoueur 1 : #{player_1.name}, tu as les X\nJoueur 2 : #{player_2.name} tu as les O"
     game = Game.new(player_1, player_2)
 
-    while game.status == 'ongoing'
+    while game.status == "ongoing"
       system "clear"
       game.turn
     end

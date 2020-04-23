@@ -29,7 +29,7 @@ class Game
   # Launch a new game if players want to once a game is over
   def new_round
     @board = Board.new
-    @status = 'ongoing'
+    @status = "ongoing"
     puts "Let's do another round !"
   end
 
