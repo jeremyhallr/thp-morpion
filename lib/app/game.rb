@@ -37,10 +37,8 @@ class Game
   # Detect if there is a winner or if it is a draw and display the end of the game
   def game_end
     if @board.win?
-      Show.new.show_board(@board)
       print "\nBravo ! #{@current_player.name} a gagné ! "
     else
-      Show.new.show_board(@board)
       print "\nC'est une égalité !"
     end
     @status = "game end"
