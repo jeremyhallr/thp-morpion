@@ -1,6 +1,7 @@
 class Application
 
   def welcome
+    system "clear"
     puts "-" * 38
     puts "|   Bienvenue sur 'RUBY MORPION' !   |"
     puts "-" * 38
